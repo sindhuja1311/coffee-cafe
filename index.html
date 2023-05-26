@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee cafe`</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+    <a href="#homie">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#booking">Booking</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!--website -->
+  <!--HOME--->
+  <div id="homie">
+  <div class="slideshow">
+    <img src="images/hero_1.jpg" alt="Image 1">
+    <img src="images/hero_2.jpg" alt="Image 2">
+    <img src="images/hero_3.jpg" alt="Image 3">
+  </div>
+
+  
+  <script>
+   var images = document.querySelectorAll('.slideshow img');
+   var currentImageIndex = 0;
+
+   function showImage(index) {
+     for (var i = 0; i < images.length; i++) {
+       images[i].style.opacity = '0';
+     }
+
+     images[index].style.opacity = '1';
+   }
+
+   function nextImage() {
+     currentImageIndex++;
+     if (currentImageIndex === images.length) {
+       currentImageIndex = 0;
+     }
+     showImage(currentImageIndex);
+   }
+
+   setInterval(nextImage, 3000);
+ </script>
+
+
+      <div class="content">
+         <h1>Coffee Heaven</h1>
+         <p>Get your taste of coffee with hint of of desserts we got here for you!</p>
+      </div>
+</div>
+<br><br><br>
+<!--end of home-->
+
+<!--MENUUU-->
+   <div id="menu">
+    <h1 style="text-align:center;">Menu</h1>
+    <table>
+      <tr>
+        <td>
+    <div class="card">
+      <img src="images/coffee_latte.jpg" alt="Avatar" >
+      <div class="container">
+        <h4><b>Coffee Latte</b></h4>
+        <p>Get a taste of our cafe` speciality coffee latte and pair it up with any dessert available</p>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="card">
+      <img src="images/coffee_latte.jpg" alt="Avatar" >
+      <div class="container">
+        <h4><b>Coffee Latte</b></h4>
+        <p>Get a taste of our cafe` speciality coffee latte and pair it up with any dessert available</p>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="card">
+      <img src="images/coffee_latte.jpg" alt="Avatar" >
+      <div class="container">
+        <h4><b>Coffee Latte</b></h4>
+        <p>Get a taste of our cafe` speciality coffee latte and pair it up with any dessert available</p>
+      </div>
+    </div>
+  </td>
+  </tr>
+  <tr>
+    <td>
+<div class="card">
+  <img src="images/coffee_latte.jpg" alt="Avatar" >
+  <div class="container">
+    <h4><b>Coffee Latte</b></h4>
+    <p>Get a taste of our cafe` speciality coffee latte and pair it up with any dessert available</p>
+  </div>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="images/coffee_latte.jpg" alt="Avatar" >
+  <div class="container">
+    <h4><b>Coffee Latte</b></h4>
+    <p>Get a taste of our cafe` speciality coffee latte and pair it up with any dessert available</p>
+  </div>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="images/coffee_latte.jpg" alt="Avatar" >
+  <div class="container">
+    <h4><b>Coffee Latte</b></h4>
+    <p>Get a taste of our cafe` speciality coffee latte and pair it up with any dessert available</p>
+  </div>
+</div>
+</td>
+</tr>
+  </table>
+   </div>
+<!--end of menu-->
+
+<!--booking-->
+    <div id="booking" style="background-color:#4B3832;">
+        <img src="images/coffee_back.png" alt="">
+        <div class="reg-form" style="background-color:#4B3832;" align="center">
+          <h1 style="text-align:center;color:white;font-family:cursive;">Reservation</h1>
+          <hr><br><br>
+            <form  method="post" action="submit.php">
+                <label for="cus-name">Reserve under</label><br>
+                <input type="text" placeholder="Name" name="cus_name">
+                <br><br>
+                <label for="cus-seats">Seats to book</label><br>
+                <input type="number" placeholder="Seats count" name="cus_seats">
+                <br><br>
+                <input type="datetime-local" placeholder="datetime" name="time"><br><br>
+                <label for="cus-contact">Contact Number</label><br>
+                <input type="number" placeholder="Phone number" name="pho_num">
+                <br><br><br>
+                <input type="submit" placeholder="BOOK" name="book" value="book">
+                
+            </form>
+        </div>
+    </div>
+<!--end of booking-->
+
+<!--contact-footer-section-->
+<div id="contact">
+  <h1>For more</h1>
+    <a class=" contact-link" href ="#">Instagram</a>
+    <a class="contact-link" href="#">Facebook</a>
+    <a class="contact-link" href="#">Twitter</a>
+    <a class="contact-link" href="#">Snapchat</a>
+</div>
+</body>
+</html>
